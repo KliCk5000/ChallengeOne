@@ -1,0 +1,23 @@
+- Build a two column layout with a navbar.
+ The page should be inside a container that has 30px of margin on both side.
+
+- Each column should be half the size of the parent container. 
+When the window reaches 768px or less, the right column should 
+drop underneath the 1st creating two full-width columns.
+
+- The left column should have an <h1>, <h2>, and a <p>. 
+Put some dummy text inside here.
+
+- The right column should have a radio button, regular button, 
+and three checkboxes.
+
+- The navbar at the top that spans the full-width of the container. 
+On the right side of the nav, it should say your name. 
+On the left side of the container, there should be a list with 3 items: 
+Home, About, and Contact (they don't need to link anywhere). 
+They should all display on one line.
+
+- When the page is above 768px:
+   -- The navbar should be green; Otherwise it should be orange.
+   -- The left column <p> should be font-size: 10px. 
+   Achieve this without putting a class on the <p> tag.

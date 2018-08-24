@@ -1,0 +1,76 @@
+body * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    /*There was a weird 8px margin added by browser, should I
+    use some sort of reset here instead?*/
+}
+
+.container {
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 1000px;
+    background-color: lightblue;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav ul,
+nav li,
+nav p {
+    display: inline-block;
+}
+
+nav li:nth-child(1)::after, nav li:nth-child(2)::after {
+    /* Is there an easier way to do the above?*/
+    content: " | ";
+}
+
+nav ul,
+nav p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav p {
+    float: right;
+}
+
+main {
+
+}
+
+.column {
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+
+/* If screen is greater than 768px*/
+@media only screen and (min-width: 768px) {
+    nav {
+        background-color: green;
+    }
+    /*This made the most sense to me*/
+    .column:nth-child(1) p {
+        font-size: 10px;
+    }
+    .column {
+        width: 50%;
+    }
+}
